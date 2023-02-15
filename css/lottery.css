@@ -1,0 +1,291 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  display: block;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+picture {
+  display: block;
+}
+picture img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../images/bg-new.png);
+  background-position: left top;
+  background-repeat: repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+main::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 3.14%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/footer-bg.png");
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.icon-home {
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45px;
+  height: 45px;
+  background-image: url("../images/icon-home.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #c86a42;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.icon-home:hover {
+  background-color: #b94240;
+}
+
+.img-1 {
+  display: inline-block;
+  width: 23.4375%;
+  height: 0;
+  padding-bottom: 10.625%;
+  background-image: url("../images/lottery-img1.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 190px;
+}
+
+.img-2 {
+  display: inline-block;
+  width: 26.796875%;
+  height: 0;
+  padding-bottom: 10.46875%;
+  background-image: url("../images/lottery-img2.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box {
+  width: 100%;
+  height: 0;
+  padding-bottom: 43.4985968195%;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin: 40px 0;
+}
+.box::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 44.6721311475%;
+  background-image: url("../images/lottery-wrap.png");
+  background-position: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -5px;
+  top: 2.5px;
+}
+.box-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.box-inner {
+  width: 70%;
+}
+.box-inner p {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Microsoft JhengHei", arial;
+  color: black;
+  text-align: center;
+}
+.box-inner p.light {
+  color: #b94240;
+  line-height: 1.2;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.box-inner a {
+  display: block;
+  width: 27.3684210526%;
+  height: 0;
+  padding-bottom: 7.1052631579%;
+  background-image: url("../images/lottery_btn.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-decoration: none;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.box-inner a:hover {
+  background-image: url("../images/lottery_btn-hover.png");
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+
+  .img-1 {
+    margin-right: 10%;
+  }
+
+  .box-inner p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 980px) {
+  main {
+    padding: 25px 0;
+  }
+  main::before {
+    padding-bottom: 8.1770833333%;
+  }
+}
+@media screen and (max-width: 575px) {
+  main::before {
+    padding-bottom: 20.4427083333%;
+  }
+
+  .wrapper::before {
+    content: "";
+    padding-bottom: 272.3509933775%;
+  }
+
+  .icon-home {
+    width: 36px;
+    height: 36px;
+  }
+
+  .img-1 {
+    width: 30.612244898%;
+    padding-bottom: 13.8775510204%;
+    margin-right: 10%;
+  }
+
+  .img-2 {
+    width: 35%;
+    padding-bottom: 13.6734693878%;
+  }
+
+  .box::before {
+    left: -1%;
+    top: 1px;
+  }
+  .box-inner p {
+    font-size: 3.4782608696vw;
+  }
+  .box-inner p.light {
+    margin: 1.7391304348vw 0;
+  }
+  .box-inner a {
+    width: 18.0869565217vw;
+    padding-bottom: 4.6956521739vw;
+  }
+}

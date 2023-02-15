@@ -1,0 +1,323 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  display: block;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+picture img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../images/bg-new.png);
+  background-position: left top;
+  background-repeat: repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+main::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 3.14%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/footer-bg.png");
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner {
+  margin-bottom: 45px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+.title img {
+  max-width: 224px;
+  width: 100%;
+  padding-left: 115px;
+}
+.title p {
+  font-family: "Microsoft JhengHei", arial;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: 45px;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/knife.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 201px;
+  height: 38px;
+  left: 0%;
+  top: -17px;
+}
+
+.form {
+  padding: 0 60px 0 175px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-wrap {
+  border: dashed 1px black;
+  width: 100%;
+  padding: 30px 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.form-group {
+  width: 48%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form label {
+  width: 100px;
+  font-family: "Microsoft JhengHei", arial;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: right;
+}
+.form label .ls-large {
+  letter-spacing: 2em;
+}
+.form input {
+  width: calc(100% - 120px);
+  height: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form i {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #e83a18;
+  vertical-align: middle;
+}
+.form-btn {
+  width: 100%;
+  text-align: center;
+}
+.form a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  background-image: url(../images/form_btn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 118px;
+  height: 31px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+.form a span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Microsoft JhengHei", arial;
+  color: black;
+  position: relative;
+  margin-left: -8px;
+}
+.form a span::after {
+  content: "▲";
+  display: block;
+  position: absolute;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  right: -20px;
+  top: 8px;
+  color: black;
+}
+.form a:hover {
+  background-image: url(../images/form_btn_hover.svg);
+}
+.form a:hover span {
+  color: white;
+}
+.form a:hover span::after {
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .form {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  main {
+    padding: 25px 0;
+  }
+  main::before {
+    padding-bottom: 8.1770833333%;
+  }
+
+  .title {
+    margin: 0 auto 25px;
+  }
+  .title img {
+    padding-left: 50px;
+  }
+  .title p {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-right: unset;
+  }
+}
+@media screen and (max-width: 575px) {
+  main::before {
+    padding-bottom: 20.4427083333%;
+  }
+
+  .wrapper::before {
+    content: "";
+    padding-bottom: 272.3509933775%;
+  }
+
+  .form-wrap {
+    padding: 20px;
+  }
+  .form label {
+    width: unset;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .form input {
+    width: 100%;
+    height: unset;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
