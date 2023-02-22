@@ -198,7 +198,7 @@ img {
   background-color: rgba(55, 0, 3, 0.7);
 }
 .project .sec_tips {
-  background-image: url("../images/tips_pc_bg.png");
+  background-color: #DDDDDD;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,7 +211,6 @@ img {
 }
 @media (max-width: 750px) {
   .project .sec_tips {
-    background-image: url("../images/tips_sp_bg.png");
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -284,19 +283,19 @@ img {
 }
 .project .mlp_text {
   width: 100%;
-  max-width: 27.5520833333vw;
+  max-width: 39.0625vw;
   font-size: 1.25vw;
   letter-spacing: 0.03em;
 }
 @media (max-width: 1440px) {
   .project .mlp_text {
     font-size: 1.125rem;
-    max-width: 25rem;
   }
 }
 @media (max-width: 1125px) {
   .project .mlp_text {
     font-size: 1.25rem;
+    max-width: unset;
   }
 }
 @media (max-width: 750px) {
@@ -708,7 +707,7 @@ img {
 }
 @media (max-width: 750px) {
   .project .tips h2 {
-    font-size: 9.6vw;
+    font-size: 6.9333333333vw;
     line-height: 1.5;
     margin-bottom: 8.5333333333vw;
   }
